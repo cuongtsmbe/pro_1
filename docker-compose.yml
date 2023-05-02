@@ -12,7 +12,7 @@ services:
       MYSQL_USER: MyWordPressUser
       MYSQL_PASSWORD: Pa$$5w0rD
     volumes: 
-      - ./dbdata:/var/lib/mysql
+      - ~/dbdata:/var/lib/mysql
       # Previous four lines define the main variables needed for the MySQL container to work: database, database username, database user password, and the MySQL root password.
   wordpress:
     depends_on:
