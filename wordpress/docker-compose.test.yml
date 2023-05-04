@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  autobiz-wp:
+    container_name: autobiz-wp-test
+    build: .
+    ports:
+      - 8092:80
+    volumes:
+      - .:/var/www/html
+    networks:
+      - autobiz-test
+    depends_on:
+      - autobiz-wp-mysql
+  autobiz-wp-mysql:
+    container_name: autobiz-wp-mysql-test
+    image: mysql:8.0.29
+    env_file:
+      - /data/test/env/mysql.env
+    volumes:
+      - /data/test/autobiz-wp-mysql:/var/lib/mysql
+    networks:
+      - autobiz-test
+    ports:
+      - 3301:3306
+networks:
+  autobiz-test:
+    name: autobiz-test
+

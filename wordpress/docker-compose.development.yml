@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  autobiz-wp:
+    container_name: autobiz-wp-development
+    build: .
+    ports:
+      - 8090:80
+    networks:
+      - autobiz-development
+    restart: always
+    volumes:
+      - ./wp-content/uploads/:/var/www/html/uploads/
+    depends_on:
+      - autobiz-wp-mysql
+  autobiz-wp-mysql:
+    container_name: autobiz-wp-mysql-development
+    image: mysql:8.0.29
+    env_file:
+      - /data/development/env/mysql.env
+    volumes:
+      - /data/development/autobiz-wp-mysql:/var/lib/mysql
+    networks:
+      - autobiz-development
+    restart: always
+    ports:
+      - 3308:3306
+networks:
+  autobiz-development:
+    name: autobiz-development
+
