@@ -5,7 +5,7 @@ services:
     container_name: autobiz-wp-production
     build: .
     ports:
-      - 8091:80
+      - 80:80
     networks:
       - autobiz-production
     restart: always
