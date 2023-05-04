@@ -18,9 +18,9 @@ services:
     image: mysql:8.0.29
     restart: always
     env_file:
-      - /data/production/env/mysql.env
+      - ./mysql.env
     volumes:
-      - /data/production/autobiz-wp-mysql:/var/lib/mysql
+      - /data/production/hieu-wp-mysql:/var/lib/mysql
     networks:
       - autobiz-production
     ports:
