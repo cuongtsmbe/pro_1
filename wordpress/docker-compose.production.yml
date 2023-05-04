@@ -20,7 +20,7 @@ services:
     env_file:
       - ./mysql.env
     volumes:
-      - /data/production/hieu-wp-mysql:/var/lib/mysql
+      - /data/production/demo-wp-mysql:/var/lib/mysql
     networks:
       - autobiz-production
     ports:
