@@ -31,7 +31,7 @@ services:
       FTP_USER: ftp
       FTP_PASS: ftp
     volumes:
-      - /var/www/html:/home/vsftpd
+      - /var/www/html/wp-content:/home/vsftpd/wp-content
     ports:
       - 20:20
       - 21:21
