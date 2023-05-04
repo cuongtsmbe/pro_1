@@ -31,7 +31,7 @@ services:
       FTP_USER: demo
       FTP_PASS: demo
     volumes:
-      - ./wp-content:/home/vsftpd/wp-content
+      - .:/home/vsftpd
     ports:
       - 20:20
       - 21:21
