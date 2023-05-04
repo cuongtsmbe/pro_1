@@ -1,7 +1,7 @@
 FROM php:8.0-apache
 # install base module
 RUN apt update \
-    && apt install -y libzip-dev zip libpng-dev \
+    && apt install -y nano libzip-dev zip libpng-dev \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
