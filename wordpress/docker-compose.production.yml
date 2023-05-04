@@ -28,8 +28,8 @@ services:
   ftp:
     image: fauria/vsftpd
     environment:
-      FTP_USER: demo
-      FTP_PASS: demo
+      FTP_USER: ftp
+      FTP_PASS: ftp
     volumes:
       - .:/home/vsftpd
     ports:
