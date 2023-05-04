@@ -25,6 +25,21 @@ services:
       - autobiz-production
     ports:
       - 3309:3306
+  ftp:
+    image: fauria/vsftpd
+    environment:
+      FTP_USER: demo
+      FTP_PASS: demo
+    volumes:
+      - ./wp-content:/home/vsftpd/demo
+    ports:
+      - 20:20
+      - 21:21
+      - 21100-21110:21100-21110
+    restart: always
+    networks:
+      - autobiz-production
+
 networks:
   autobiz-production:
     name: autobiz-production

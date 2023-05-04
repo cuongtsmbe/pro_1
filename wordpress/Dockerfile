@@ -23,3 +23,5 @@ RUN  pecl install -o -f redis \
 # install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 COPY ./. /var/www/html
+# set user and group default WordPress
+RUN chown -R www-data:www-data /var/www/html/wp-content/uploads
