@@ -11,7 +11,6 @@ services:
     restart: always
     volumes:
       - ./wp-content/uploads/:/var/www/html/wp-content/uploads/
-      - .:/var/www/html
     depends_on:
       - autobiz-wp-mysql
   autobiz-wp-mysql:
