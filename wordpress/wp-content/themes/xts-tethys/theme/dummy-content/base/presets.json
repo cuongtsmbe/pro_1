@@ -1,0 +1,152 @@
+{
+	"1": {
+		"id": 1,
+		"name": "blog_masonry_tethys",
+		"condition": []
+	},
+	"3": {
+		"id": 3,
+		"name": "no_page_heading_tethys",
+		"condition": []
+	},
+	"4": {
+		"id": 4,
+		"name": "shop_with_bg_tethys",
+		"condition": []
+	},
+	"5": {
+		"id": 5,
+		"name": "product_default_template_tethys",
+		"condition": []
+	},
+	"6": {
+		"id": 6,
+		"name": "product_thumb_left_tethys",
+		"condition": []
+	},
+	"7": {
+		"id": 7,
+		"name": "product_thumb_bottom_tethys",
+		"condition": []
+	},
+	"8": {
+		"id": 8,
+		"name": "sticky_product_tethys",
+		"condition": []
+	},
+	"11": {
+		"id": 11,
+		"name": "with_sidebar_tethys",
+		"condition": []
+	},
+	"12": {
+		"id": 12,
+		"name": "product_thumb_one_column_tethys",
+		"condition": []
+	},
+	"13": {
+		"id": 13,
+		"name": "product_thumb_two_columns_tethys",
+		"condition": []
+	},
+	"14": {
+		"id": 14,
+		"name": "product_accordion_tabs_tethys",
+		"condition": []
+	},
+	"15": {
+		"id": 15,
+		"name": "shop_masonry_tethys",
+		"condition": []
+	},
+	"19": {
+		"id": 19,
+		"name": "shop_header_overlap_tethys",
+		"condition": []
+	},
+	"21": {
+		"id": 21,
+		"name": "off_canvas_sidebar_tethys",
+		"condition": []
+	},
+	"22": {
+		"id": 22,
+		"name": "shop_filters_tethys",
+		"condition": []
+	},
+	"23": {
+		"id": 23,
+		"name": "animation_view_tethys",
+		"condition": []
+	},
+	"24": {
+		"id": 24,
+		"name": "hover_summary_tethys",
+		"condition": []
+	},
+	"25": {
+		"id": 25,
+		"name": "hover_bottom_button_tethys",
+		"condition": []
+	},
+	"26": {
+		"id": 26,
+		"name": "hover_button_on_image_tethys",
+		"condition": []
+	},
+	"27": {
+		"id": 27,
+		"name": "hover_content_on_image_tethys",
+		"condition": []
+	},
+	"28": {
+		"id": 28,
+		"name": "hover_icons_on_image_tethys",
+		"condition": []
+	},
+	"29": {
+		"id": 29,
+		"name": "infinite_scrolling_tethys",
+		"condition": []
+	},
+	"30": {
+		"id": 30,
+		"name": "load_more_tethys",
+		"condition": []
+	},
+	"31": {
+		"id": 31,
+		"name": "cookies_law_tethys",
+		"condition": []
+	},
+	"32": {
+		"id": 32,
+		"name": "catalog_mode_tethys",
+		"condition": []
+	},
+	"33": {
+		"id": 33,
+		"name": "sticky_add_to_cart_tethys",
+		"condition": []
+	},
+	"34": {
+		"id": 34,
+		"name": "without_sidebar_tethys",
+		"condition": []
+	},
+	"35": {
+		"id": 35,
+		"name": "image_page_title_tethys",
+		"condition": []
+	},
+	"36": {
+		"id": 36,
+		"name": "blog_content_boxed_tethys",
+		"condition": []
+	},
+	"37": {
+		"id": 37,
+		"name": "blog_one_column_tethys",
+		"condition": []
+	}
+}

@@ -1,0 +1,338 @@
+{
+	"product_attributes": {
+		"color": {
+			"name": "Color",
+			"slug": "color",
+			"swatches": true,
+			"has_archives": false
+		},
+		"brand": {
+			"name": "Brand",
+			"slug": "brand",
+			"swatches": false,
+			"has_archives": true
+		},
+		"size": {
+			"name": "Size",
+			"slug": "size",
+			"swatches": true,
+			"has_archives": false
+		}
+	},
+	"images_sizes": {
+		"thumbnail_size_w": "150",
+		"thumbnail_size_h": "150",
+		"medium_size_w": "400",
+		"medium_size_h": "300",
+		"large_size_w": "1300",
+		"large_size_h": "800",
+		"woocommerce_single_image_width": "1000",
+		"woocommerce_thumbnail_image_width": "460",
+		"woocommerce_thumbnail_cropping": "uncropped"
+	},
+	"links": {
+		"uploads": [
+			"https://space.xtemos.com/dummy/tethys/wp-content/uploads/sites/8/",
+			"https://space.xtemos.com/demo/tethys/wp-content/uploads/sites/18/",
+			"http://space.xtemos.com/dummy/tethys/wp-content/uploads/sites/8/",
+			"http://space.xtemos.com/demo/tethys/wp-content/uploads/sites/18/"
+		],
+		"simple": [
+			"https://space.xtemos.com/dummy/tethys/",
+			"https://space.xtemos.com/dummy/tethys",
+			"https://space.xtemos.com/demo/tethys/",
+			"https://space.xtemos.com/demo/tethys",
+			"http://space.xtemos.com/dummy/tethys/",
+			"http://space.xtemos.com/dummy/tethys",
+			"http://space.xtemos.com/demo/tethys/",
+			"http://space.xtemos.com/demo/tethys"
+		]
+	},
+	"menu_items": {
+		"shop_main": {
+			"title": "Shop",
+			"position": 2,
+			"menu": "main-menu-left",
+			"meta": {
+				"_menu_item_design": "full",
+				"_menu_item_block": "1870"
+			}
+		},
+		"shop_simple": {
+			"title": "Shop",
+			"position": 2,
+			"menu": "main-menu-simple",
+			"meta": {
+				"_menu_item_design": "full",
+				"_menu_item_block": "1870"
+			}
+		},
+		"shop_mobile": {
+			"title": "Shop",
+			"position": 2,
+			"menu": "mobile-menu"
+		}
+	},
+	"pages_meta": {
+		"shop": {
+			"title": "Shop",
+			"meta": {
+				"_xts_offcanvas_sidebar_mobile": "1",
+				"_xts_page_title_design": "inline-2",
+				"_xts_page_title_bg_color": {
+					"idle": "#ff5558",
+					"css_output": "1"
+				},
+				"_xts_page_title_color_scheme": "light",
+				"_xts_page_title_size": "xs"
+			}
+		},
+		"cart": {
+			"title": "Cart",
+			"meta": {
+				"_xts_sidebar_position": "disabled",
+				"_xts_offcanvas_sidebar_mobile": "1"
+			}
+		},
+		"checkout": {
+			"title": "Checkout",
+			"meta": {
+				"_xts_sidebar_position": "disabled",
+				"_xts_offcanvas_sidebar_mobile": "1"
+			}
+		},
+		"my-account": {
+			"title": "My account",
+			"meta": {
+				"_xts_sidebar_position": "disabled",
+				"_xts_offcanvas_sidebar_mobile": "1"
+			}
+		}
+	},
+	"widgets": {
+		"main-widget-sidebar": {
+			"categories-1": {
+				"title": "",
+				"count": 0,
+				"hierarchical": 0,
+				"dropdown": 0
+			},
+			"recent-posts-1": {
+				"title": "",
+				"number": 5
+			},
+			"recent-comments-1": {
+				"title": "",
+				"number": 5
+			},
+			"xts-widget-social-counter-1": {
+				"title": "",
+				"facebook_user_id": "StarWars",
+				"twitter_user_id": "SpaceX",
+				"youtube_user_id": "",
+				"youtube_api_key": "",
+				"instagram_user_id": "",
+				"pinterest_user_id": "spacecentre",
+				"telegram_user_id": "",
+				"style": "default",
+				"items_layout": "horiz",
+				"size": "s"
+			}
+		},
+		"shop-widget-sidebar": {
+			"woocommerce_price_filter-1": {
+				"title": "Filter by Price"
+			},
+			"xts-widget-filter-1": {
+				"title": "Filter by Color",
+				"attribute": "color",
+				"category": [
+					"all"
+				],
+				"query_type": "and",
+				"style": "list",
+				"swatches_size": "m",
+				"labels": "1",
+				"tooltips": "1",
+				"show_count": "1",
+				"close_if_not_selected": 0
+			},
+			"xts-widget-filter-2": {
+				"title": "Filter by Size",
+				"attribute": "size",
+				"category": [
+					"all"
+				],
+				"query_type": "and",
+				"style": "inline",
+				"swatches_size": "m",
+				"labels": 0,
+				"tooltips": "1",
+				"show_count": 0,
+				"close_if_not_selected": 0
+			},
+			"xts-widget-filter-3": {
+				"title": "Filter by Brand",
+				"attribute": "brand",
+				"category": [
+					"all"
+				],
+				"query_type": "and",
+				"style": "double",
+				"swatches_size": "m",
+				"labels": 0,
+				"tooltips": "1",
+				"show_count": 0,
+				"close_if_not_selected": 0
+			},
+			"xts-widget-html-block-1": {
+				"id": "269"
+			}
+		},
+		"single-product-widget-sidebar": {
+			"woocommerce_top_rated_products-1": {
+				"title": "Top rated products",
+				"number": 5
+			},
+			"woocommerce_product_categories-2": {
+				"title": "Product categories",
+				"orderby": "name",
+				"dropdown": 0,
+				"count": 0,
+				"hierarchical": 1,
+				"show_children_only": 0,
+				"hide_empty": 0,
+				"max_depth": ""
+			}
+		},
+		"filters-area-widget-sidebar": {
+			"woocommerce_price_filter-2": {
+				"title": "Filter by Price"
+			},
+			"xts-widget-filter-4": {
+				"title": "Filter by Size",
+				"attribute": "size",
+				"category": [
+					"all"
+				],
+				"query_type": "and",
+				"style": "inline",
+				"swatches_size": "m",
+				"labels": "1",
+				"tooltips": "1",
+				"show_count": "1",
+				"close_if_not_selected": 0
+			},
+			"xts-widget-filter-5": {
+				"title": "Filter by Color",
+				"attribute": "color",
+				"category": [
+					"all"
+				],
+				"query_type": "and",
+				"style": "list",
+				"swatches_size": "m",
+				"labels": "1",
+				"tooltips": "1",
+				"show_count": "1",
+				"close_if_not_selected": 0
+			},
+			"xts-widget-filter-6": {
+				"title": "Filter by Brand",
+				"attribute": "brand",
+				"category": [
+					"all"
+				],
+				"query_type": "and",
+				"style": "list",
+				"swatches_size": "m",
+				"labels": "1",
+				"tooltips": "1",
+				"show_count": "1",
+				"close_if_not_selected": 0
+			}
+		},
+		"footer-1": {
+			"xts-widget-image-1": {
+				"title": "",
+				"link": "https:\/\/space.xtemos.com\/dummy\/tethys\/",
+				"is_external": 0,
+				"nofollow": 0,
+				"image": "3156",
+				"image_size": "thumbnail",
+				"align": "left",
+				"width": "",
+				"height": ""
+			},
+			"text-2": {
+				"title": "",
+				"text": "Signup to be the first to hear about exclusive deals, special offers and upcoming collections.\r\n\r\n111 Wall Stree, USA, New York\r\n\r\n+1 (234) 567 8900",
+				"filter": true,
+				"visual": true
+			}
+		},
+		"footer-2": {
+			"nav_menu-1": {
+				"title": "Useful Links",
+				"nav_menu": 143
+			}
+		},
+		"footer-3": {
+			"nav_menu-2": {
+				"title": "Information",
+				"nav_menu": 144
+			}
+		},
+		"footer-4": {
+			"nav_menu-3": {
+				"title": "Categories",
+				"nav_menu": 145
+			}
+		},
+		"footer-5": {
+			"text-3": {
+				"title": "Newsletter",
+				"text": "Get Tethys. and discover streamlined website construction today!",
+				"filter": true,
+				"visual": true
+			},
+			"mc4wp_form_widget-1": {
+				"title": ""
+			},
+			"xts-widget-social-buttons-1": {
+				"title": "",
+				"type": "follow",
+				"color_scheme": "dark",
+				"align": "left",
+				"size": "s",
+				"style": "default",
+				"shape": "round"
+			}
+		},
+		"copyrights-left-widget-sidebar": {
+			"text-4": {
+				"title": "",
+				"text": "TETHYS \u00a9 2022 Created By <a href=\"https:\/\/space.xtemos.com\/\">XTemos Studio<\/a>",
+				"filter": true,
+				"visual": true
+			}
+		},
+		"copyrights-right-widget-sidebar": {
+			"xts-widget-mega-menu-1": {
+				"title": "",
+				"menu": "copyright-menu",
+				"design": "horizontal",
+				"style": "default",
+				"color_scheme": "dark",
+				"align": "right",
+				"items_gap": "s"
+			}
+		}
+	},
+	"revslider_global": {
+		"desktop": "1240",
+		"notebook": "1024",
+		"tablet": "778",
+		"mobile": "480"
+	}
+}

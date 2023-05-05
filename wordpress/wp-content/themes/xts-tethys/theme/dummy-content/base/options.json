@@ -1,0 +1,436 @@
+{
+	"blog_excerpt": "excerpt",
+	"advanced_typography": {
+		"0": {
+			"custom": "",
+			"selector": [
+				"product-archive-title"
+			],
+			"custom-selector": "",
+			"google": "0",
+			"font-family": "",
+			"font-weight": "400",
+			"font-style": "",
+			"font-subset": "",
+			"text-transform": "",
+			"font-size": "",
+			"tablet": {
+				"font-size": "",
+				"line-height": ""
+			},
+			"mobile": {
+				"font-size": "",
+				"line-height": ""
+			},
+			"line-height": "",
+			"color": "#777777",
+			"hover": {
+				"color": "#333333"
+			}
+		},
+		"{{index}}": {
+			"custom": "",
+			"custom-selector": "",
+			"google": "0",
+			"font-family": "",
+			"font-weight": "",
+			"font-style": "",
+			"font-subset": "",
+			"text-transform": "",
+			"font-size": "",
+			"tablet": {
+				"font-size": "",
+				"line-height": ""
+			},
+			"mobile": {
+				"font-size": "",
+				"line-height": ""
+			},
+			"line-height": "",
+			"color": "",
+			"hover": {
+				"color": ""
+			}
+		}
+	},
+	"blog_different_sizes": "1",
+	"blog_different_sizes_position": "1,6,11",
+	"blog_sidebar_sticky": "1",
+	"blog_single_content_boxed": "1",
+	"blog_single_content_width": "900",
+	"brands_attribute": "pa_brand",
+	"compare_fields": [
+		"description",
+		"sku",
+		"availability",
+		"pa_brand",
+		"pa_size",
+		"pa_color"
+	],
+	"compare_page": "3093",
+	"content_typography": [
+		{
+			"custom": "",
+			"google": "0",
+			"font-family": "Futura",
+			"font-weight": "400",
+			"font-style": "",
+			"font-subset": "",
+			"text-transform": "",
+			"font-size": "",
+			"tablet": {
+				"font-size": "",
+				"line-height": ""
+			},
+			"mobile": {
+				"font-size": "",
+				"line-height": ""
+			},
+			"line-height": "",
+			"color": ""
+		}
+	],
+	"cookies_content": "<p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.<\/p>",
+	"copyrights_content_type": "widgets",
+	"custom_fonts": {
+		"0": {
+			"font-name": "Futura",
+			"font-weight": "500",
+			"font-woff": {
+				"url": "\/2019\/11\/FuturaMediumC.woff",
+				"id": "62"
+			},
+			"font-woff2": {
+				"url": "\/2019\/11\/FuturaMediumC.woff2",
+				"id": "3159"
+			}
+		},
+		"2": {
+			"font-name": "Futura",
+			"font-weight": "400",
+			"font-woff": {
+				"url": "\/2019\/11\/FuturaBookC.woff",
+				"id": "73"
+			},
+			"font-woff2": {
+				"url": "\/2019\/11\/FuturaBookC.woff2",
+				"id": "74"
+			}
+		},
+		"3": {
+			"font-name": "Futura",
+			"font-weight": "600",
+			"font-woff": {
+				"url": "\/2019\/11\/FuturaDemiC.woff",
+				"id": "444"
+			},
+			"font-woff2": {
+				"url": "\/2019\/11\/FuturaDemiC.woff2",
+				"id": "3160"
+			}
+		},
+		"{{index}}": {
+			"font-name": "",
+			"font-weight": "400",
+			"font-woff": {
+				"url": "",
+				"id": ""
+			},
+			"font-woff2": {
+				"url": "",
+				"id": ""
+			}
+		}
+	},
+	"default_header": "header_175958",
+	"email_link": "0",
+	"footer_layout": "14",
+	"footer_widgets_collapse": "1",
+	"header_banner_color_scheme": "default",
+	"lazy_loading_offset": "200",
+	"page_title_bg": {
+		"color": "#e8f0f3",
+		"url": "",
+		"id": "",
+		"repeat": "",
+		"size": "",
+		"attachment": "",
+		"position": "",
+		"position_x": "0",
+		"position_y": "0",
+		"css_output": "1"
+	},
+	"page_title_design": "centered",
+	"page_title_shop_categories_products_count": "0",
+	"page_title_shop_text": "<p><span style=\"color: #ffffff\">By October 13th: Up to 50% off Autumn Collections<\/span><\/p>",
+	"page_title_size": "s",
+	"portfolio_filters_type": "masonry",
+	"portfolio_masonry": "1",
+	"prefooter_html_block": "30",
+	"product_label_shape": "rectangle",
+	"product_layered_nav_widgets_height": "190",
+	"product_loop_design": "simple",
+	"products_per_row_mobile": "2",
+	"search_posts_results": "1",
+	"shop_filters_area": "0",
+	"shop_filters_area_always_open": "0",
+	"shop_sidebar_position": "left",
+	"shop_spacing": "20",
+	"sidebar_position": "left",
+	"single_product_additional_tab_content_type": "html_block",
+	"single_product_additional_tab_html_block": "733",
+	"single_product_bg": {
+		"color": "#f0f0f0",
+		"url": "",
+		"id": "",
+		"repeat": "",
+		"size": "",
+		"attachment": "",
+		"position": "",
+		"position_x": "0",
+		"position_y": "0",
+		"css_output": "1"
+	},
+	"single_product_custom_template": "983",
+	"single_product_custom_template_preview_product": "190",
+	"single_product_header": "header_608941",
+	"single_product_sidebar_position": "disabled",
+	"single_product_stock_progress_bar": "1",
+	"single_product_thumbnails_gallery_image_width": "300",
+	"single_product_thumbnails_gallery_position": "without",
+	"sticky_bottom_navbar": "1",
+	"sticky_bottom_navbar_fields": [
+		"shop",
+		"wishlist",
+		"compare",
+		"account"
+	],
+	"wishlist_page": "3088",
+	"1": {
+		"blog_masonry": "1",
+		"blog_columns": "3",
+		"blog_columns_tablet": "",
+		"blog_columns_mobile": "",
+		"blog_sidebar_position": "disabled",
+		"blog_different_sizes": "1",
+		"blog_different_sizes_position": "1,7",
+		"wp_options": "posts_per_page:10",
+		"fields_to_save": "blog_masonry,blog_columns,blog_columns_tablet,blog_columns_mobile,blog_sidebar_position,blog_different_sizes,blog_different_sizes_position,wp_options"
+	},
+	"3": {
+		"product_archive_page_title": "0",
+		"page_title_shop_title": "1",
+		"page_title_shop_categories": "0",
+		"fields_to_save": "product_archive_page_title,page_title_shop_title,page_title_shop_categories"
+	},
+	"4": {
+		"shop_bg": {
+			"color": "#f9f9f9",
+			"url": "",
+			"id": "",
+			"repeat": "",
+			"size": "",
+			"attachment": "",
+			"position": "",
+			"position_x": "0",
+			"position_y": "0",
+			"css_output": "1"
+		},
+		"fields_to_save": "shop_bg"
+	},
+	"5": {
+		"single_product_custom_template": "0",
+		"single_product_custom_template_preview_product": "0",
+		"single_product_header": "header_175958",
+		"fields_to_save": "single_product_custom_template,single_product_custom_template_preview_product,single_product_header"
+	},
+	"6": {
+		"single_product_custom_template": "0",
+		"single_product_thumbnails_gallery_position": "side",
+		"single_product_thumbnails_gallery_count": "3",
+		"single_product_header": "header_175958",
+		"fields_to_save": "single_product_custom_template,single_product_thumbnails_gallery_position,single_product_thumbnails_gallery_count,single_product_header"
+	},
+	"7": {
+		"single_product_header": "header_175958",
+		"single_product_thumbnails_gallery_position": "bottom",
+		"single_product_thumbnails_gallery_count": "4",
+		"single_product_custom_template": "0",
+		"fields_to_save": "single_product_header,single_product_thumbnails_gallery_position,single_product_thumbnails_gallery_count,single_product_custom_template"
+	},
+	"8": {
+		"single_product_thumbnails_gallery_count": "4",
+		"single_product_thumbnails_gallery_position": "bottom",
+		"single_product_sticky": "1",
+		"single_product_custom_template": "0",
+		"single_product_header": "header_175958",
+		"fields_to_save": "single_product_thumbnails_gallery_count,single_product_thumbnails_gallery_position,single_product_sticky,single_product_custom_template,single_product_header"
+	},
+	"11": {
+		"single_product_custom_template": "0",
+		"single_product_header": "header_175958",
+		"single_product_sidebar_position": "right",
+		"single_product_sidebar_sticky": "1",
+		"fields_to_save": "single_product_custom_template,single_product_header,single_product_sidebar_position,single_product_sidebar_sticky"
+	},
+	"12": {
+		"single_product_custom_template": "0",
+		"single_product_thumbnails_gallery_position": "grid-1",
+		"single_product_sticky": "1",
+		"single_product_header": "header_175958",
+		"fields_to_save": "single_product_custom_template,single_product_thumbnails_gallery_position,single_product_sticky,single_product_header"
+	},
+	"13": {
+		"single_product_custom_template": "0",
+		"single_product_thumbnails_gallery_position": "grid-2",
+		"single_product_sticky": "1",
+		"single_product_header": "header_175958",
+		"fields_to_save": "single_product_custom_template,single_product_thumbnails_gallery_position,single_product_sticky,single_product_header"
+	},
+	"14": {
+		"single_product_custom_template": "0",
+		"single_product_tabs_layout": "accordion",
+		"single_product_header": "header_175958",
+		"single_product_thumbnails_gallery_position": "side",
+		"single_product_thumbnails_gallery_count": "3",
+		"fields_to_save": "single_product_custom_template,single_product_tabs_layout,single_product_header,single_product_thumbnails_gallery_position,single_product_thumbnails_gallery_count,wp_options"
+	},
+	"15": {
+		"product_loop_design": "mask",
+		"shop_masonry": "1",
+		"shop_different_sizes": "1",
+		"shop_different_sizes_position": "1,6",
+		"products_per_page": "10",
+		"products_per_page_variations": "10,20,30,-1",
+		"fields_to_save": "product_loop_design,shop_masonry,shop_different_sizes,shop_different_sizes_position,products_per_page,products_per_page_variations"
+	},
+	"19": {
+		"page_title_bg": {
+			"color": "#e8f0f3",
+			"url": "\/sites\/8\/2019\/11\/tethys-title-img-150x150.jpg",
+			"id": "3066",
+			"repeat": "no-repeat",
+			"size": "cover",
+			"attachment": "",
+			"position": "center center",
+			"position_x": "0",
+			"position_y": "0",
+			"css_output": "1"
+		},
+		"default_header": "header_928579",
+		"fields_to_save": "wp_options,page_title_bg,default_header"
+	},
+	"21": {
+		"offcanvas_sidebar_desktop": "1",
+		"offcanvas_sidebar_mobile": "1",
+		"blog_sidebar_position": "left",
+		"blog_offcanvas_sidebar_desktop": "1",
+		"blog_offcanvas_sidebar_mobile": "1",
+		"shop_sidebar_position": "left",
+		"shop_offcanvas_sidebar_desktop": "1",
+		"shop_offcanvas_sidebar_mobile": "1",
+		"products_per_page": "12",
+		"products_per_row": "4",
+		"products_per_row_tablet": "",
+		"products_per_row_mobile": "2",
+		"shop_filters_area": "0",
+		"fields_to_save": "offcanvas_sidebar_desktop,offcanvas_sidebar_mobile,blog_sidebar_position,blog_offcanvas_sidebar_desktop,blog_offcanvas_sidebar_mobile,shop_sidebar_position,shop_offcanvas_sidebar_desktop,shop_offcanvas_sidebar_mobile,products_per_page,products_per_row,products_per_row_tablet,products_per_row_mobile,,shop_filters_area"
+	},
+	"22": {
+		"shop_woocommerce_catalog_ordering": "0",
+		"shop_sidebar_position": "disabled",
+		"shop_filters_area": "1",
+		"shop_filters_area_always_open": "0",
+		"shop_filters_area_content_type": "widgets",
+		"products_per_row": "4",
+		"products_per_row_tablet": "",
+		"products_per_row_mobile": "2",
+		"fields_to_save": "shop_woocommerce_catalog_ordering,shop_sidebar_position,shop_filters_area,shop_filters_area_always_open,shop_filters_area_content_type,products_per_row,products_per_row_tablet,products_per_row_mobile,"
+	},
+	"23": {
+		"shop_animation_in_view": "1",
+		"shop_animation": "zoom-in",
+		"shop_animation_delay": "100",
+		"shop_animation_duration": "fast",
+		"fields_to_save": "shop_animation_in_view,shop_animation,shop_animation_delay,shop_animation_duration"
+	},
+	"24": {
+		"product_loop_design": "summary",
+		"fields_to_save": "product_loop_design"
+	},
+	"25": {
+		"product_loop_design": "btn",
+		"fields_to_save": "product_loop_design"
+	},
+	"26": {
+		"product_loop_design": "img-btn",
+		"fields_to_save": "product_loop_design"
+	},
+	"27": {
+		"product_loop_design": "mask",
+		"fields_to_save": "product_loop_design"
+	},
+	"28": {
+		"product_loop_design": "icons",
+		"fields_to_save": "product_loop_design"
+	},
+	"29": {
+		"blog_pagination": "infinite",
+		"shop_pagination": "infinite",
+		"products_per_page": "8",
+		"fields_to_save": "blog_pagination,shop_pagination,products_per_page"
+	},
+	"30": {
+		"blog_pagination": "load_more",
+		"shop_pagination": "load_more",
+		"products_per_page": "8",
+		"fields_to_save": "blog_pagination,shop_pagination,products_per_page"
+	},
+	"31": {
+		"cookies": "1",
+		"fields_to_save": "cookies"
+	},
+	"32": {
+		"catalog_mode": "1",
+		"fields_to_save": "catalog_mode"
+	},
+	"33": {
+		"single_product_sticky_add_to_cart": "1",
+		"single_product_mobile_sticky_add_to_cart": "1",
+		"fields_to_save": "single_product_sticky_add_to_cart,single_product_mobile_sticky_add_to_cart"
+	},
+	"34": {
+		"wp_options": "posts_per_page:12",
+		"blog_sidebar_position": "disabled",
+		"blog_columns": "3",
+		"blog_columns_tablet": "",
+		"blog_columns_mobile": "",
+		"fields_to_save": "wp_options,blog_sidebar_position,blog_columns,blog_columns_tablet,blog_columns_mobile,"
+	},
+	"35": {
+		"page_title_design": "centered",
+		"page_title_size": "xl",
+		"blog_single_design": "page-title",
+		"blog_single_parallax_scroll": "0",
+		"fields_to_save": "page_title_design,page_title_size,blog_single_design,blog_single_parallax_scroll"
+	},
+	"36": {
+		"blog_sidebar_position": "disabled",
+		"blog_single_content_boxed": "1",
+		"blog_single_content_width": "900",
+		"blog_single_design": "default",
+		"fields_to_save": "blog_sidebar_position,blog_single_content_boxed,blog_single_content_width,blog_single_design"
+	},
+	"37": {
+		"blog_image_size": "large",
+		"blog_columns": "1",
+		"blog_columns_tablet": "1",
+		"blog_columns_mobile": "1",
+		"blog_sidebar_position": "right",
+		"blog_sidebar_size": "medium",
+		"blog_excerpt": "excerpt",
+		"blog_excerpt_words_or_letters": "letters",
+		"blog_excerpt_length": "300",
+		"fields_to_save": "blog_image_size,blog_columns,blog_columns_tablet,blog_columns_mobile,,blog_sidebar_position,blog_sidebar_size,blog_excerpt,blog_excerpt_words_or_letters,blog_excerpt_length"
+	}
+}
