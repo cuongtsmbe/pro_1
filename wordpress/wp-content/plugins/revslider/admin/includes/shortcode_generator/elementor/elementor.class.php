@@ -45,11 +45,7 @@ class RevSliderElementor {
 
 		// Register widget
 		$widgets_manager = \Elementor\Plugin::instance()->widgets_manager;
-		if(version_compare(ELEMENTOR_VERSION, '3.1.0', '<=')){
-			$widgets_manager->register_widget_type( new RevSliderElementorWidgetPre310() );
-		}else{
-			$widgets_manager->register_widget_type( new RevSliderElementorWidget() );
-		}
+		$widgets_manager->register_widget_type( new RevSliderElementorWidget() );
 
 	}
 	
