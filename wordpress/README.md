@@ -16,8 +16,8 @@
 
 **Bước 1:** <br />
 ```Đặt code sao vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing."``` <br />
-```define('WP_HOME', 'https://greenspire.store');``` <br />
-```define('WP_SITEURL', 'https://greenspire.store');``` <br />
+```define('WP_HOME', 'https://domain.com');``` <br />
+```define('WP_SITEURL', 'https://domain.com');``` <br />
 ```define('FORCE_SSL_CONTENT', true);``` <br />
 ```define('FORCE_SSL_ADMIN', true);``` <br />
 ```// in some setups HTTP_X_FORWARDED_PROTO might contain``` <br />
