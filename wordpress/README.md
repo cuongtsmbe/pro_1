@@ -1,6 +1,8 @@
 
 **Run build image/container(in folder wordpress)** <br />
-```docker compose -f docker-compose.production.yml up -d ``` <br />
+```Dockerfile
+docker compose -f docker-compose.production.yml up -d 
+``` <br />
 
 **Setup wordpress** <br />
 ```At:  http://domain.com/wp-admin/setup-config.php?step=1``` <br />
@@ -17,8 +19,8 @@
 **Bước 1:** <br />
 ```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing." <br />```
 ```Nginx
-define('WP_HOME', 'https://domain.com'); <br />
-define('WP_SITEURL', 'https://domain.com'); <br />
+define('WP_HOME', 'https://domain.com');
+define('WP_SITEURL', 'https://domain.com'); 
 define('FORCE_SSL_CONTENT', true); <br />
 define('FORCE_SSL_ADMIN', true); <br />
 // in some setups HTTP_X_FORWARDED_PROTO might contain <br />
