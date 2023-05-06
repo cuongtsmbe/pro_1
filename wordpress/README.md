@@ -55,7 +55,7 @@ if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
 
 ========================================
 
-**Fix upload**
+**Fix upload** <br />
 ```Vào "/wordpress/wp-content" thực hiện:``` <br />
 ```Dockerfile
 chown -R www-data:www-data uploads
