@@ -11,11 +11,11 @@
 
 **Sử dụng https trong wordpress** <br />
 **Bước 0:** <br />
-``` thực hiện bước 1 trước nếu không có gì thay đổi thì quay lại bước 0``` <br />
+```Thực hiện bước 1 trước nếu không có gì thay đổi thì quay lại bước 0``` <br />
 ```Sử dụng plugin : "Better Search Replace" để chuyển tìm các router http và chuyển sang https ``` <br />
 
 **Bước 1:** <br />
-```Cài https: đặt vào wp-config.php ``` <br />
+```Đặt code sao vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing."``` <br />
 ```define('WP_HOME', 'https://greenspire.store');``` <br />
 ```define('WP_SITEURL', 'https://greenspire.store');``` <br />
 ```define('FORCE_SSL_CONTENT', true);``` <br />
