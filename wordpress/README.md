@@ -5,6 +5,8 @@ docker compose -f docker-compose.production.yml up -d
 ``` 
 <br /> 
 
+========================================
+
 **Setup wordpress** 
 <br /> 
 ```
@@ -13,12 +15,16 @@ At:  http://domain.com/wp-admin/setup-config.php?step=1
 ``` 
 <br /> 
 
+========================================
+
 **Thêm theme mới tại:** 
 <br /> 
  ```
  wordpress/wp-content/themes
  ``` 
- <br /> 
+ <br />
+
+======================================== 
 
 **Sử dụng https trong wordpress** 
 <br />
@@ -43,5 +49,15 @@ define('FORCE_SSL_ADMIN', true);
 if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) 
        $_SERVER['HTTPS']='on'; 
 /* That's all, stop editing! Happy publishing. */ 
+```
+
+<br />
+
+========================================
+
+**Fix upload**
+```Vào "/wordpress/wp-content" thực hiện:``` <br />
+```Dockerfile
+chown -R www-data:www-data uploads
 ```
 
