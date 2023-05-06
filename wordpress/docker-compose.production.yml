@@ -39,6 +39,23 @@ services:
     restart: always
     networks:
       - wordpress_production
+    depends_on:
+      - wp_production
+  nginx:
+    image: nginx:alpine
+    hostname: chatZi-ngnix
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./certs/Cloudflare.cert:/etc/nginx/certs/greenspire.store.crt
+      - ./certs/Cloudflare.key:/etc/nginx/certs/greenspire.store.key
+    depends_on:
+      - wp_production
+    networks:
+      - wordpress_production
 
 networks:
   wordpress_production:

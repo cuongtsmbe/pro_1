@@ -35,6 +35,8 @@ services:
     restart: always
     networks:
       - wordpress_dev
+  depends_on:
+      - wp_dev
 
 networks:
   wordpress_dev:
