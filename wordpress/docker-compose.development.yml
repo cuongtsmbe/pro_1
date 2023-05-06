@@ -1,31 +1,42 @@
 version: '3'
 
 services:
-  autobiz-wp:
-    container_name: autobiz-wp-development
+  wp_dev:
+    container_name: wordpress_dev
     build: .
     ports:
-      - 8090:80
+      - 80:80
     networks:
-      - autobiz-development
+      - wordpress_dev
     restart: always
-    volumes:
-      - ./wp-content/uploads/:/var/www/html/uploads/
     depends_on:
-      - autobiz-wp-mysql
-  autobiz-wp-mysql:
-    container_name: autobiz-wp-mysql-development
+      - wp_mysql_dev
+  wp_mysql_dev:
+    container_name: mysql_wp_dev
     image: mysql:8.0.29
-    env_file:
-      - /data/development/env/mysql.env
-    volumes:
-      - /data/development/autobiz-wp-mysql:/var/lib/mysql
-    networks:
-      - autobiz-development
     restart: always
+    env_file:
+      - ./mysql.env
+    networks:
+      - wordpress_dev
     ports:
-      - 3308:3306
+      - 3309:3306
+  wp_ftp_dev:
+    image: fauria/vsftpd
+    environment:
+      FTP_USER: ftp
+      FTP_PASS: ftp
+    volumes:
+      - /var/www/html/wp-content:/home/vsftpd
+    ports:
+      - 20:20
+      - 21:21
+      - 21100-21110:21100-21110
+    restart: always
+    networks:
+      - wordpress_dev
+
 networks:
-  autobiz-development:
-    name: autobiz-development
+  wordpress_dev:
+    name: wordpress_network_dev
 
