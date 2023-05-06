@@ -3,18 +3,22 @@
 ```Dockerfile
 docker compose -f docker-compose.production.yml up -d
 ``` 
-<br />
+<br /> 
+
 **Setup wordpress** 
-<br />
-```At:  http://domain.com/wp-admin/setup-config.php?step=1``` 
-<br />
-```Điền thông tin database,username,password,database host,...vào ô input dựa vào file mysql.env ``` 
-<br />
+<br /> 
+```
+At:  http://domain.com/wp-admin/setup-config.php?step=1
+Điền thông tin database,username,password,database host,...vào ô input dựa vào file mysql.env 
+``` 
+<br /> 
 
 **Thêm theme mới tại:** 
-<br />
- ```wordpress/wp-content/themes``` 
- <br />
+<br /> 
+ ```
+ wordpress/wp-content/themes
+ ``` 
+ <br /> 
 
 **Sử dụng https trong wordpress** 
 <br />
