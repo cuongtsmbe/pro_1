@@ -4,8 +4,6 @@ services:
   wp_production:
     container_name: wordpress_production
     build: .
-    ports:
-      - 80:80
     networks:
       - wordpress_production
     restart: always
