@@ -15,16 +15,17 @@
 ```Sử dụng plugin : "Better Search Replace" để chuyển tìm các router http và chuyển sang https ``` <br />
 
 **Bước 1:** <br />
-```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing."``` <br />
-```define('WP_HOME', 'https://domain.com');``` <br />
-```define('WP_SITEURL', 'https://domain.com');``` <br />
-```define('FORCE_SSL_CONTENT', true);``` <br />
-```define('FORCE_SSL_ADMIN', true);``` <br />
-```// in some setups HTTP_X_FORWARDED_PROTO might contain``` <br />
-```// a comma-separated list e.g. http,https``` <br />
-```// so check for https existence``` <br />
-```if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)``` <br />
-```       $_SERVER['HTTPS']='on';``` <br />
-```/* That's all, stop editing! Happy publishing. */``` <br />
-
+```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing." <br />
+```Nginx
+define('WP_HOME', 'https://domain.com'); <br />
+define('WP_SITEURL', 'https://domain.com'); <br />
+define('FORCE_SSL_CONTENT', true); <br />
+define('FORCE_SSL_ADMIN', true); <br />
+// in some setups HTTP_X_FORWARDED_PROTO might contain <br />
+// a comma-separated list e.g. http,https <br />
+// so check for https existence <br />
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) <br />
+       $_SERVER['HTTPS']='on'; <br />
+/* That's all, stop editing! Happy publishing. */ <br />
+```
 
