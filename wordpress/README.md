@@ -15,7 +15,7 @@
 ```Sử dụng plugin : "Better Search Replace" để chuyển tìm các router http và chuyển sang https ``` <br />
 
 **Bước 1:** <br />
-```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing." <br />
+```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing." <br />```
 ```Nginx
 define('WP_HOME', 'https://domain.com'); <br />
 define('WP_SITEURL', 'https://domain.com'); <br />
