@@ -34,7 +34,10 @@ At:  http://domain.com/wp-admin/setup-config.php?step=1
 <br />
 ```
 Sử dụng plugin : "Better Search Replace" để chuyển tìm các router http và chuyển sang https 
-vào Settings » General and make sure that the ‘WordPress Address’ and ‘Site Address’ options have HTTPS URLs.
+và vào Settings » General and make sure that the ‘WordPress Address’ and ‘Site Address’ options have HTTPS URLs. (hoặc có thể thêm bằng code "
+define('WP_HOME', 'https://domain.com');
+define('WP_SITEURL', 'https://domain.com');
+" ở file wp-config.php )
 ``` 
 <br />
 
