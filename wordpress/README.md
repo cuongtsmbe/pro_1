@@ -15,15 +15,6 @@ At:  http://domain.com/wp-admin/setup-config.php?step=1
 ``` 
 <br /> 
 
-========================================
-
-**Thêm theme mới tại:** 
-<br /> 
- ```
- wordpress/wp-content/themes
- ``` 
- <br />
-
 ======================================== 
 
 **Sử dụng https trong wordpress** 
@@ -71,3 +62,12 @@ chown -R www-data:www-data uploads
 
 **Upload themes or sửa bất cú file bằng ftp(thay cách vào trực tiếp server)** <br />
 ```Vào plugins trong trang admin và cài "WP File Manager" sau đó vào để vào upload/delete folder/file trên server.``` <br />
+
+========================================
+
+**Thêm theme mới tại:** 
+<br /> 
+ ```
+ wordpress/wp-content/themes
+ ``` 
+ <br />
