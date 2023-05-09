@@ -9,7 +9,6 @@ services:
     restart: always
     volumes:
       - ./wp-content/uploads/:/var/www/html/wp-content/uploads/
-
     depends_on:
       - wp_mysql_production
   wp_mysql_production:
