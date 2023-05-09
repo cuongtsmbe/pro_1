@@ -21,22 +21,6 @@ services:
       - wordpress_test
     ports:
       - 3309:3306
-  wp_ftp_test:
-    image: fauria/vsftpd
-    environment:
-      FTP_USER: ftp
-      FTP_PASS: ftp
-    volumes:
-      - /var/www/html/wp-content:/home/vsftpd
-    ports:
-      - 20:20
-      - 21:21
-      - 21100-21110:21100-21110
-    restart: always
-    networks:
-      - wordpress_test
-    depends_on:
-      - wp_test
 
 networks:
   wordpress_test:

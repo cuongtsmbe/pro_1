@@ -22,7 +22,12 @@ RUN  pecl install -o -f redis \
   && docker-php-ext-enable redis
 # install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 COPY ./. /var/www/html
+
+# increase max (size,time,input) limit 
+COPY ./php/php.ini /usr/local/etc/php/php.ini
+
 
 RUN if [ ! -d /var/www/html/wp-content/uploads ]; then mkdir -p /var/www/html/wp-content/uploads; fi
 

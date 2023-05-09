@@ -9,6 +9,7 @@ services:
     restart: always
     volumes:
       - ./wp-content/uploads/:/var/www/html/wp-content/uploads/
+
     depends_on:
       - wp_mysql_production
   wp_mysql_production:
@@ -23,22 +24,6 @@ services:
       - wordpress_production
     ports:
       - 3309:3306
-  wp_ftp_production:
-    image: fauria/vsftpd
-    environment:
-      FTP_USER: ftp
-      FTP_PASS: ftp
-    volumes:
-      - /var/www/html/wp-content:/home/vsftpd
-    ports:
-      - 20:20
-      - 21:21
-      - 21100-21110:21100-21110
-    restart: always
-    networks:
-      - wordpress_production
-    depends_on:
-      - wp_production
   nginx:
     image: nginx:alpine
     hostname: chatZi-ngnix
@@ -54,7 +39,22 @@ services:
       - wp_production
     networks:
       - wordpress_production
-
+  # wp_ftp_production:
+  #   image: fauria/vsftpd
+  #   environment:
+  #     FTP_USER: ftp
+  #     FTP_PASS: ftp
+  #   volumes:
+  #     - /var/www/html/wp-content:/home/vsftpd
+  #   ports:
+  #     - 20:20
+  #     - 21:21
+  #     - 21100-21110:21100-21110
+  #   restart: always
+  #   networks:
+  #     - wordpress_production
+  #   depends_on:
+  #     - wp_production
 networks:
   wordpress_production:
     name: wordpress_network_production

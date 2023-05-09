@@ -21,22 +21,6 @@ services:
       - wordpress_dev
     ports:
       - 3309:3306
-  wp_ftp_dev:
-    image: fauria/vsftpd
-    environment:
-      FTP_USER: ftp
-      FTP_PASS: ftp
-    volumes:
-      - /var/www/html/wp-content:/home/vsftpd
-    ports:
-      - 20:20
-      - 21:21
-      - 21100-21110:21100-21110
-    restart: always
-    networks:
-      - wordpress_dev
-  depends_on:
-      - wp_dev
 
 networks:
   wordpress_dev:
