@@ -64,7 +64,7 @@ chown -R www-data:www-data uploads
 
 ========================================
 
-**C1: làm trên trang admin như bình thường(vì đã fix lỗi upload themes)** <br />
+**C1: làm trên trang admin như bình thường(vì đã fix lỗi max upload themes trong php.ini)** <br />
 
 **C2: sửa bất cú file bằng ftp(thay cách vào trực tiếp server)** <br />
 ```Vào plugins trong trang admin và cài "WP File Manager" sau đó vào để vào upload/delete folder/file trên server.``` <br />
