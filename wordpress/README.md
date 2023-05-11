@@ -21,7 +21,7 @@ At:  http://domain.com/wp-admin/setup-config.php?step=1
 <br />
 **Bước 0:** 
 <br />
-```Thực hiện bước 1 trước nếu không được thì quay lại bước 0``` 
+```Thực hiện bước (1) trước nếu không được thì quay lại bước 0``` 
 <br />
 ```
 Sử dụng plugin : "Better Search Replace" để chuyển tìm các router http và chuyển sang https 
