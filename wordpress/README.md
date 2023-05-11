@@ -34,7 +34,7 @@ define('WP_SITEURL', 'https://domain.com');
 
 **Bước 1:**
 <br />
-```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing." <br />```
+```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing.".khi hoàn thành cần restart container <br />```
 ```Nginx
 define('WP_HOME', 'https://domain.com');
 define('WP_SITEURL', 'https://domain.com'); 
