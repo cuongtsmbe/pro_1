@@ -36,6 +36,7 @@ define('WP_SITEURL', 'https://domain.com');
 <br />
 ```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing.".khi hoàn thành cần restart container <br />```
 ```Nginx
+/*Tăng giới hạn bộ nhớ trong tệp wp-config.php*/
 define('WP_MEMORY_LIMIT', '256M');
 
 define('WP_HOME', 'https://domain.com');
