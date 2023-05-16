@@ -35,8 +35,9 @@ define('WP_SITEURL', 'https://domain.com');
 **Bước 1:**
 <br />
 ```Thay domain.com và đặt code vào wp-config.php trước dòng chữ "That's all, stop editing! Happy publishing.".khi hoàn thành cần restart container <br />```
+```Cần tăng giới hạn bộ nhớ của wp trong tệp wp-config.php nếu không khi cài plugin như "Google Listings and Ads" sẽ lỗi nghiêm trọng "PHP Fatal error" trong server <br />```  
 ```Nginx
-/*Tăng giới hạn bộ nhớ trong tệp wp-config.php*/
+/*Tăng giới hạn bộ nhớ */
 define('WP_MEMORY_LIMIT', '256M');
 
 define('WP_HOME', 'https://domain.com');
