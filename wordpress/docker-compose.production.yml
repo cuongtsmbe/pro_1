@@ -1,11 +1,23 @@
 version: '3'
 
 services:
-  wp_production:
-    container_name: wordpress_production
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./portainer_data:/data
+    restart: always
+    networks:
+      - network_production
+  wp_php_production:
+    container_name: php_production
     build: .
     networks:
-      - wordpress_production
+      - network_production
     restart: always
     volumes:
       - ./wp-content/uploads/:/var/www/html/wp-content/uploads/
@@ -20,9 +32,9 @@ services:
     volumes:
       - /data/production/demo-wp-mysql:/var/lib/mysql
     networks:
-      - wordpress_production
+      - network_production
     ports:
-      - 3309:3306
+      - 3306:3306
   nginx:
     image: nginx:alpine
     hostname: chatZi-ngnix
@@ -35,26 +47,10 @@ services:
       - ./certs/Cloudflare.cert:/etc/nginx/certs/greenspire.store.crt
       - ./certs/Cloudflare.key:/etc/nginx/certs/greenspire.store.key
     depends_on:
-      - wp_production
+      - wp_php_production
     networks:
-      - wordpress_production
-  # wp_ftp_production:
-  #   image: fauria/vsftpd
-  #   environment:
-  #     FTP_USER: ftp
-  #     FTP_PASS: ftp
-  #   volumes:
-  #     - /var/www/html/wp-content:/home/vsftpd
-  #   ports:
-  #     - 20:20
-  #     - 21:21
-  #     - 21100-21110:21100-21110
-  #   restart: always
-  #   networks:
-  #     - wordpress_production
-  #   depends_on:
-  #     - wp_production
+      - network_production
 networks:
-  wordpress_production:
+  network_production:
     name: wordpress_network_production
 

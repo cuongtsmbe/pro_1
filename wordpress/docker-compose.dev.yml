@@ -1,0 +1,65 @@
+version: '3.8'
+
+
+networks:
+  wp_network_dev:
+    name: wp_network_for_dev
+
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./portainer_data:/data
+    restart: always
+    networks:
+      - wp_network_dev
+  wp_php_dev:
+    container_name: php_dev
+    build: .
+    networks:
+      - wp_network_dev
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      #- .:/var/www/html/
+      - ./wp-admin/:/var/www/html/wp-admin/
+      - ./wp-content/:/var/www/html/wp-content/
+      #- ./wp-includes/:/var/www/html/wp-includes/
+    depends_on:
+      - wp_mysql_dev
+  wp_mysql_dev:
+    container_name: mysql_wp_dev
+    image: mysql:8.0.29
+    restart: always
+    env_file:
+      - ./mysql.env
+    volumes:
+      - /data/production/dev3-wp-mysql:/var/lib/mysql
+    networks:
+      - wp_network_dev
+    ports:
+      - 3306:3306
+  wp_ftp_production:
+    image: fauria/vsftpd
+    environment:
+      FTP_USER: ftp
+      FTP_PASS: ftp
+    volumes:
+      - /var/www/html/wp-content:/home/vsftpd
+    ports:
+      - 20:20
+      - 21:21
+      - 21100-21110:21100-21110
+    restart: always
+    networks:
+      - wp_network_dev
+    depends_on:
+      - wp_php_dev
+
+
