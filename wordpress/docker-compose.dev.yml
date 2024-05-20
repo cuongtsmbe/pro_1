@@ -74,5 +74,21 @@ services:
       - wp_php_dev
     networks:
       - wp_network_dev
+  wp_pma_dev:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - wp_mysql_dev
+    environment:
+      PMA_HOST: wp_mysql_dev
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+    depends_on:
+    - wp_mysql_dev
+    networks:
+      - wp_network_dev
 
 
