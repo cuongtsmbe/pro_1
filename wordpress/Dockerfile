@@ -30,6 +30,9 @@ RUN cd / \
   && chmod +x wp-cli.phar \
   && mv wp-cli.phar /usr/local/bin/wp
 
+# install mysqlcheck cmd
+RUN apt-get install -y default-mysql-client
+
 RUN wp --info
 
 COPY ./ /var/www/html
