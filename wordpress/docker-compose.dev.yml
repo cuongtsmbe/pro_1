@@ -24,8 +24,6 @@ services:
     networks:
       - wp_network_dev
     restart: always
-    ports:
-      - 80:80
     volumes:
       #- .:/var/www/html/
       - ./wp-admin/:/var/www/html/wp-admin/
