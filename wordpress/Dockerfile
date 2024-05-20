@@ -23,6 +23,15 @@ RUN  pecl install -o -f redis \
 # install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+
+# install wp-cli (https://wp-cli.org/)
+RUN cd / \
+  && curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
+  && chmod +x wp-cli.phar \
+  && mv wp-cli.phar /usr/local/bin/wp
+
+RUN wp --info
+
 COPY ./ /var/www/html
 
 # increase max (size,time,input) limit 
@@ -33,8 +42,4 @@ RUN if [ ! -d /var/www/html/wp-content/uploads ]; then mkdir -p /var/www/html/wp
 
 # set user and group default WordPress
 RUN chown -R www-data:www-data /var/www/html
-RUN chown -R www-data:www-data /var/www/html/wp-content/uploads
-RUN chmod 777 /var/www/html/wp-includes
-RUN chmod 777 /var/www/html/wp-admin
-RUN chmod 777 /var/www/html/wp-content
-RUN chmod 664 /var/www/html/wp-includes/*
+

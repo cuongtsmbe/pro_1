@@ -29,7 +29,7 @@ define( 'DB_USER', 'demo_wp_user' );
 define( 'DB_PASSWORD', 'demo_wp_pw' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'wp_mysql_dev' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -87,8 +87,8 @@ define( 'WP_DEBUG', false );
 /*Tăng giới hạn bộ nhớ */
 define('WP_MEMORY_LIMIT', '-1');
 
-define('WP_HOME', 'https://localhost');
-define('WP_SITEURL', 'https://localhost'); 
+define('WP_HOME', 'http://ecomfive.store');
+define('WP_SITEURL', 'http://ecomfive.store'); 
 define('FORCE_SSL_CONTENT', true); 
 define('FORCE_SSL_ADMIN', true); 
 // in some setups HTTP_X_FORWARDED_PROTO might contain 
